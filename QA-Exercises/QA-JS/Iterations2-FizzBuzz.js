@@ -16,3 +16,22 @@ function printList(){
         
     }
 }
+
+function printListAdv(limit,fizz,buzz){
+    for (var i=1;i<limit+1;i++){
+        if (i%3==0&&i%5==0){
+            document.write(fizz+buzz+"\t\t");
+        }
+        else if (i%5==0){
+            document.write(buzz+"\t\t");
+        }
+        else if(i%3==0){
+            document.write(fizz+"\t\t");
+        }
+        
+        else{
+            document.write(i+"\t\t");
+        }
+        
+    }
+}
